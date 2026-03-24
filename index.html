@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suman Gidwani | Yoga & Sound Healing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">Suman Gidwani</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Class</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#classes" onclick="closeMobile()">Classes</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Book a Class</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="Suman Gidwani Yoga" class="hero-img" id="heroImg" onerror="this.style.display='none'" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-sub reveal">Yoga Educator · 200 & 300 RYT Certified</p>
+      <h1 class="hero-title reveal">Suman<br/><em>Gidwani</em></h1>
+      <p class="hero-tagline reveal">Aerial · Medical · Yin & Restorative<br/>Pre/Post-Natal · Sound Healing</p>
+      <div class="hero-badges reveal">
+        <span>🧘‍♀️ In-Person · Hyderabad</span>
+        <span>💻 Online Classes Available</span>
+      </div>
+      <a href="#contact" class="btn-primary reveal">Book a Class</a>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-img-wrap">
+        <img src="images/about.jpg" alt="About Suman" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="about-badge">हरिऊं तत सत 🙏</div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">About</p>
+        <h2>Rooted in nature.<br/><em>Led by the heart.</em></h2>
+        <p>Suman Gidwani is a certified Yoga Educator with 200 & 300 RYT credentials, based in Hyderabad. With a deep love for nature 🦋 and a heart full of intention, she guides students through transformative practices that heal the body and calm the mind.</p>
+        <p>Her offerings span a wide range — from the strength and grace of Aerial Yoga to the gentle, therapeutic touch of Medical and Restorative Yoga. She also specialises in Pre & Post-Natal Yoga and Sound Healing, creating safe, nurturing spaces for all stages of life.</p>
+        <div class="about-pills">
+          <span>200 RYT ✓</span>
+          <span>300 RYT ✓</span>
+          <span>Sound Healer ✓</span>
+          <span>Pre/Post-Natal ✓</span>
+        </div>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section class="classes" id="classes">
+    <div class="container-full">
+      <div class="section-header">
+        <p class="section-label">What I Offer</p>
+        <h2>Classes & <em>Practices</em></h2>
+        <p class="section-desc">Available for in-person sessions in Hyderabad and online classes worldwide.</p>
+      </div>
+      <div class="classes-grid">
+
+        <div class="class-card">
+          <div class="class-icon">🪂</div>
+          <h3>Aerial Yoga</h3>
+          <p>Experience yoga suspended in the air using a silk hammock. Builds strength, flexibility and confidence in a playful, freeing way.</p>
+          <div class="class-meta">
+            <span>In-Person · Hyderabad</span>
+            <span class="schedule-tag">Schedule TBA</span>
+          </div>
+        </div>
+
+        <div class="class-card featured">
+          <div class="class-icon">🩺</div>
+          <h3>Medical Yoga</h3>
+          <p>Therapeutic yoga designed to support specific health conditions. Safe, guided, and tailored to your body's needs.</p>
+          <div class="class-meta">
+            <span>Online & In-Person</span>
+            <span class="schedule-tag">Schedule TBA</span>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <div class="class-icon">🌙</div>
+          <h3>Yin & Restorative</h3>
+          <p>Deep, slow-paced yoga that targets connective tissue. Perfect for stress relief, recovery, and inner stillness.</p>
+          <div class="class-meta">
+            <span>Online & In-Person</span>
+            <span class="schedule-tag">Schedule TBA</span>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <div class="class-icon">🤱</div>
+          <h3>Pre/Post-Natal Yoga</h3>
+          <p>Gentle, nurturing yoga designed for expecting and new mothers. Safe movements to support your journey through motherhood.</p>
+          <div class="class-meta">
+            <span>Online & In-Person</span>
+            <span class="schedule-tag">Schedule TBA</span>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <div class="class-icon">🎵</div>
+          <h3>Sound Healing</h3>
+          <p>Immersive healing sessions using sound vibrations — singing bowls, chimes, and more — to restore balance and calm.</p>
+          <div class="class-meta">
+            <span>In-Person · Hyderabad</span>
+            <span class="schedule-tag">Schedule TBA</span>
+          </div>
+        </div>
+
+        <div class="class-card cta-card">
+          <div class="class-icon">🫶</div>
+          <h3>Not sure where to start?</h3>
+          <p>Reach out and Suman will help you find the right practice for your body and goals.</p>
+          <a href="#contact" class="btn-primary small">Let's Talk</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container-full">
+      <div class="section-header">
+        <p class="section-label">Gallery</p>
+        <h2>Moments of <em>Practice</em></h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Add images named: g1.jpg, g2.jpg ... g6.jpg inside /images folder -->
+        <div class="gallery-item"><img src="images/g1.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item"><img src="images/g2.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item"><img src="images/g3.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item"><img src="images/g4.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item"><img src="images/g5.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item"><img src="images/g6.jpg" alt="Yoga" onerror="this.parentElement.style.display='none'" /></div>
+      </div>
+      <div class="gallery-footer">
+        <a href="https://www.instagram.com/travelcaptive_yogini" target="_blank" class="btn-secondary">
+          📸 See more on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-text">
+        <p class="section-label">Get In Touch</p>
+        <h2>Ready to begin<br/><em>your journey?</em></h2>
+        <p>Whether you're a complete beginner or an experienced practitioner, Suman welcomes you. Reach out to book a class, ask a question, or just say hello 🙏</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Hyderabad, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💻</span>
+            <div>
+              <strong>Online Classes</strong>
+              <p>Available Worldwide</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📸</span>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/travelcaptive_yogini" target="_blank">@travelcaptive_yogini</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <p class="contact-prompt">The easiest way to reach Suman:</p>
+        <!-- REPLACE THE NUMBER BELOW WITH HER ACTUAL WHATSAPP NUMBER -->
+        <a href="https://wa.me/919885166410?text=Hi%20Suman!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20joining%20a%20class%20🙏" 
+           class="whatsapp-btn" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book via WhatsApp
+        </a>
+        <a href="https://www.instagram.com/travelcaptive_yogini" target="_blank" class="instagram-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>हरिऊं तत सत 🙏 · Made with love for <strong>Suman Gidwani</strong></p>
+    <p class="footer-links">
+      <a href="#home">Home</a> · 
+      <a href="#about">About</a> · 
+      <a href="#classes">Classes</a> · 
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
